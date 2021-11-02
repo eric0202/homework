@@ -3,39 +3,31 @@ package com.eric.test1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class Homework2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
-
-
+        setContentView(R.layout.activity_homework2);
     }
 
     public void myClick(View v){
         Intent intent;
         switch (v.getId()){
-            case R.id.btn_hw2:
-                intent = new Intent(MainActivity.this, Homework2Activity.class);
+            case R.id.btn_hw2p1:
+                intent = new Intent(Homework2Activity.this, hw2p1.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_hw3:
-                intent = new Intent(MainActivity.this, Homework3Activity.class);
+            case R.id.btn_hw2p2:
+                intent = new Intent(Homework2Activity.this, hw2p2.class);
                 startActivity(intent);
                 break;
-
+            case R.id.btn_hw2p3:
+                intent = new Intent(Homework2Activity.this, hw2p3.class);
+                startActivity(intent);
         }
     }
-
-
 }

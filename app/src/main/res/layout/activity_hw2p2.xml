@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".hw2p2">
 
-    <TextView
+    <EditText
         android:id="@+id/input"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:text="INPUT"
+        android:hint="INPUT"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

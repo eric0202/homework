@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test1">
         <activity
+            android:name=".Hw3P4"
+            android:exported="false" />
+        <activity
+            android:name=".Hw3P3"
+            android:exported="false" />
+        <activity
+            android:name=".Hw3P2"
+            android:exported="false" />
+        <activity
+            android:name=".Hw3P1"
+            android:exported="false" />
+        <activity
+            android:name=".Homework3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Homework2Activity"
+            android:exported="false" />
+        <activity
             android:name=".hw2p3"
             android:exported="false" />
         <activity

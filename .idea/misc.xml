@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/1/AndroidStudio/test1/app/src/main/res/layout/activity_homework2.xml" value="0.2359375" />
+        <entry key="..\:/1/AndroidStudio/test1/app/src/main/res/layout/activity_homework3.xml" value="0.25" />
         <entry key="..\:/1/AndroidStudio/test1/app/src/main/res/layout/activity_hw1p1.xml" value="0.25" />
+        <entry key="..\:/1/AndroidStudio/test1/app/src/main/res/layout/activity_hw2p1.xml" value="0.1625" />
         <entry key="..\:/1/AndroidStudio/test1/app/src/main/res/layout/activity_hw2p2.xml" value="0.25" />
         <entry key="..\:/1/AndroidStudio/test1/app/src/main/res/layout/activity_hw2p3.xml" value="0.25" />
-        <entry key="..\:/1/AndroidStudio/test1/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/1/AndroidStudio/test1/app/src/main/res/layout/activity_hw3_p1.xml" value="0.176" />
+        <entry key="..\:/1/AndroidStudio/test1/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/1/AndroidStudio/test1/app/src/main/res/layout/animal_item.xml" value="0.2" />
       </map>
     </option>
   </component>
