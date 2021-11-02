@@ -30,9 +30,9 @@ public class Hw3P1 extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                animalAdapter name = (animalAdapter) adapterView.getAdapter().getItem(i);
-                Toast.makeText(getApplicationContext(), name.data.get(i).getName(),Toast.LENGTH_LONG).show();
-                // FC, don't know why
+
+               Toast.makeText(getApplicationContext(),animals.get(i).getName(),Toast.LENGTH_SHORT).show();
+
             }
         });
 
