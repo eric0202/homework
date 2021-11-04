@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ts"
+        android:title="Text size">
+        <menu>
+            <item
+                android:id="@+id/ts_small"
+                android:title="small" />
+            <item
+                android:id="@+id/ts_medium"
+                android:title="medium" />
+            <item
+                android:id="@+id/ts_large"
+                android:title="large" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/norm"
+        android:title="Normal item" />
+    <item
+        android:id="@+id/tc"
+        android:title="Text color">
+        <menu>
+            <item
+                android:id="@+id/tc_red"
+                android:title="red" />
+            <item
+                android:id="@+id/tc_black"
+                android:title="black" />
+        </menu>
+    </item>
+
+</menu>
