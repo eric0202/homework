@@ -3,6 +3,7 @@ package com.eric.test1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ActionMode;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -18,6 +19,7 @@ import java.util.List;
 
 public class Hw3P4 extends AppCompatActivity {
     private List<Animal> animals = new ArrayList<>();
+    public List toDel = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +43,16 @@ public class Hw3P4 extends AppCompatActivity {
         listView.setMultiChoiceModeListener(new AbsListView.MultiChoiceModeListener() {
             @Override
             public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
-                if(checked == true){
 
+                if(checked){
+//                    Toast.makeText(getApplicationContext(),position+"is checked",Toast.LENGTH_LONG).show();
+                    toDel.add(String.valueOf(position));
                 }
+                else{
+//                    Toast.makeText(getApplicationContext(),position+"is unchecked",Toast.LENGTH_LONG).show();
+                    toDel.remove(String.valueOf(position));
+                }
+
             }
 
             @Override
@@ -58,7 +67,14 @@ public class Hw3P4 extends AppCompatActivity {
             }
 
             @Override
-            public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+            public boolean onActionItemClicked(ActionMode mode, MenuItem item ) {
+                Log.e("list:","current list: "+ toDel);
+                for(int i = 0;i< toDel.size();i++){
+                    animals.remove(Integer.parseInt(String.valueOf(toDel.get(i)))-i);
+                }
+                toDel.clear();
+                mode.finish();
+                Log.e("list:","After deleted: "+toDel);
                 return false;
             }
 
