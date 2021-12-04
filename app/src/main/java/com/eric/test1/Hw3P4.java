@@ -15,6 +15,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Hw3P4 extends AppCompatActivity {
@@ -68,6 +69,7 @@ public class Hw3P4 extends AppCompatActivity {
 
             @Override
             public boolean onActionItemClicked(ActionMode mode, MenuItem item ) {
+                Collections.sort(toDel);
                 Log.e("list:","current list: "+ toDel);
                 for(int i = 0;i< toDel.size();i++){
                     animals.remove(Integer.parseInt(String.valueOf(toDel.get(i)))-i);
@@ -75,7 +77,7 @@ public class Hw3P4 extends AppCompatActivity {
                 toDel.clear();
                 mode.finish();
                 Log.e("list:","After deleted: "+toDel);
-                return false;
+                return true;
             }
 
             @Override
@@ -88,28 +90,6 @@ public class Hw3P4 extends AppCompatActivity {
     }
 
 
-    ActionMode.Callback cb = new ActionMode.Callback() {
-        @Override
-        public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-            getMenuInflater().inflate(R.menu.dl_animal,menu);
-            return true;
-        }
-
-        @Override
-        public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-            return false;
-        }
-
-        @Override
-        public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-            return false;
-        }
-
-        @Override
-        public void onDestroyActionMode(ActionMode mode) {
-
-        }
-    };
 
     private void initAnimals(){
         Animal lion = new Animal("Lion",R.mipmap.lion);

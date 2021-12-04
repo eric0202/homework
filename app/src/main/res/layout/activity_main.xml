@@ -35,6 +35,17 @@
                     android:onClick="myClick"
                     android:layout_gravity="center_horizontal"/>
 
+                <Button
+                    android:id="@+id/btn_hw4"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"
+                    android:text="hw4"
+                    android:textSize="20sp"
+                    android:onClick="myClick"
+                    android:layout_gravity="center_horizontal"/>
+
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>

@@ -33,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(MainActivity.this, Homework3Activity.class);
                 startActivity(intent);
                 break;
-
+            case R.id.btn_hw4:
+                intent = new Intent(MainActivity.this, Homework4Activity.class);
+                startActivity(intent);
+                break;
         }
     }
 
